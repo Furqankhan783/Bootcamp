@@ -29,5 +29,5 @@ jobs:
     - name: Installing surge
       run: npm install --globally surge
     - name: Deploying using surge
-      run: surge ./ furqankhan.surge.sh --token {{ secrets.SURGE_TOKEN }}
+      run: surge ./ furqankhan.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
